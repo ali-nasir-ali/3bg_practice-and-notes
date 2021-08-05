@@ -55,4 +55,6 @@ heroku create flaskappcrudtodoapp
 git remote -v
 -
 git push heroku master
+# if that donot work
+git push heroku HEAD:master
 -
