@@ -50,7 +50,7 @@ git add .
 -
 git commit -m "init commit"
 -
-heroku create flaskappcrud
+heroku create flaskappcrudtodoapp
 -
 git remote -v
 -
