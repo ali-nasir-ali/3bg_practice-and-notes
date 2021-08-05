@@ -63,6 +63,7 @@ def update(id):
 
     else:
         return render_template('update.html', task=task)
+
 def init_db():
     """For use on command line for setting up
     the database.
@@ -72,22 +73,18 @@ def init_db():
     db.create_all()
     db.session.commit()
 
-"""
-if __name__ == "__main__":
-    app.run(debug=True)
-    # app.run(debug=True, port=<desired port>) # if want on different port
 
 # NOTE: this is all the way at the bottom so we can use init_db!
-if app.config["SQLALCHEMY_DATABASE_URI"] == "sqlite:///:memory:":
+def database_make():
+ if app.config["SQLALCHEMY_DATABASE_URI"] == "sqlite:///:memory:":
     # Use memory SQLITE database! Meaning the HDD is never touched!
     # Since this database will be in the memory, we have to create
     # it at the beginning of every app run.
     init_db()
-"""
+
 if __name__ == '__main__':
-    #arguments = docopt.docopt(__doc__)
-    
-    if ["init_db"]:
-        init_db()
+
+    database_make()
 
     app.run(debug=True)
+    # app.run(debug=True, port=<desired port>) # if want on different port
