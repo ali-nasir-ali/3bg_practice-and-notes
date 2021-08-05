@@ -1,0 +1,21 @@
+
+--
+https://www.youtube.com/watch?v=GdlFhF6gjKo
+-
+-
+https://github.com/ccxt/ccxt
+-
+https://github.com/sammchardy/python-binance
+-
+https://github.com/EasyAI/Simple-Binance-Trader
+-
+
+
+
+
+------------------------
+
+-----------   flask
+pip install flask flask-sqlalchemy
+
+-
