@@ -20,3 +20,8 @@ pip install flask flask-sqlalchemy
 -
 https://www.tutorialspoint.com/flask/flask_sqlalchemy.htm
 -
+
+---- # on normal
+pip install gunicorn
+-- # on debian
+sudo apt-get install gunicorn3
