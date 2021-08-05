@@ -17,5 +17,6 @@ https://github.com/EasyAI/Simple-Binance-Trader
 
 -----------   flask
 pip install flask flask-sqlalchemy
-
+-
+https://www.tutorialspoint.com/flask/flask_sqlalchemy.htm
 -
